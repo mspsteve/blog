@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web:war exploded">
+    <output-path>$USER_HOME$/IdeaProjects/zkClient/web/target/web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: zookeeper:zookeeper:3.4.6" />
+          <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:unknown" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:unknown" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:unknown" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:unknown" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:unknown" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.47" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/IdeaProjects/zkClient/web/target/web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="web/web/Web" />
+    </root>
+  </artifact>
+</component>
