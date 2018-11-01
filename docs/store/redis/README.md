@@ -18,9 +18,4 @@ sidebarDepth: 0
 
 ## 具体内容目录
 
-
-
-- redis与db一致性协议方案
-- hive
-- linux
-- markdown
+- [缓存与db一致性](./cache缓存一致性.html)

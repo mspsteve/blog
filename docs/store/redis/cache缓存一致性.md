@@ -35,7 +35,7 @@ sidebarDepth: 0
 ### 先删缓存，再更新数据库
 
  请求A进行更新操作，请求B进行查询操作。那么会出现如下情形:<br>
-（1）请求A进行写操作，删除缓存<br>
+（1）请求A进行写操作时，首先删除缓存<br>
 （2）请求B查询发现缓存不存在<br>
 （3）请求B去数据库查询得到旧值<br>
 （4）请求B将旧值写入缓存<br>
@@ -63,6 +63,10 @@ sidebarDepth: 0
   方案1：将删除失败的redis key放入到消息队列中，利用消息队列做重试。保证删除功能顺利实现，缺点代码侵入。<br>
   方案2: 使用canal订阅binlog日志，取出操作的数据和key，实现方案1重试功能。
 
+## 参考文献
+
+- [58沈剑](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=404308725&idx=1&sn=1a25ce76dd1956014ceb8a011855268e&scene=21#wechat_redirect)
+- [程序员孤独烟](https://mp.weixin.qq.com/s?__biz=MzU5NjY2MzEyMA==&mid=2247483656&idx=1&sn=5668a4d9dd1fe0e028e4c1d4bcf5d427&chksm=fe5e0f37c92986218653450cd60fc88a65f29acda51c13b84602fc421786bb549f858e56aee0&scene=21#wechat_redirect)
 
 
 
