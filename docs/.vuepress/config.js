@@ -11,15 +11,41 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'java',
               items: [
-                    { text: 'base', link: '/java/base/' },
-                    { text: 'use', link: '/java/use/' },
-                    { text: 'api', link: '/java/api/' }
+                    { text: '基础', link: '/java/base/' },
+                    { text: '进阶', link: '/java/api/' },
+                    { text: 'java8', link: '/java/java8/' }
+                ]
+            },
+            { text: '虚拟机',
+                items: [
+                    { text: '常用工具', link: '/jvm/tools/' },
+                    { text: 'use', link: '/jvm/use/' },
+                    { text: 'api', link: '/jvm/api/' }
+                ]
+            },
+            { text: '网络',
+                items: [
+                    { text: '概念', link: '/net/base/' },
+                    { text: 'RPC框架', link: '/net/rpc/' }
+                ]
+            },
+            { text: '存储',
+                items: [
+                    { text: 'redis', link: '/store/redis/' },
+                    { text: 'mysql', link: '/store/mysql/' }
                 ]
             },
             { text: '常用命令&日常',
                 items: [
                     { text: '常用命令', link: '/tools/' },
-                    { text: '日常', link: '/date/' }
+                    { text: '日常', link: '/date/' },
+                    { text: '读书笔记', link: '/log/' },
+                ]
+            },
+            { text: '面试准备',
+                items: [
+                    { text: '老婆专用', link: '/interview/wife/' },
+                    { text: '其他', link: '/interview/' }
                 ]
             },
             { text: 'github', link: 'https://github.com/mspsteve/' }
@@ -27,17 +53,74 @@ module.exports = {
         ],
         sidebar: {
 
+            '/java/api/': [
+                {
+                    title: 'java进阶',
+                    collapsable: true,
+                    children: [
+                        'Unsafe/',
+                        'Thread/',
+                        'Executor/',
+                        'Lock/'
+                    ]
+                }
+            ],
             '/java/base/': [
                 {
                   title: 'java基础',
                   collapsable: true,
                   children: [
-                      '',
+                      'IO/',
+                      'Reference/',
+                      'Exception/',
                       '多态/',
                       '泛型/'
                   ]
                 }
             ],
+            //java 8相关新功能
+            '/java/java8/': [
+                {
+                    title: 'java8新特性',
+                    collapsable: true,
+                    children: [
+                        '',
+                        'function/',
+                        'guava/'
+                    ]
+                }
+            ],
+            '/jvm/tools/': [
+                {
+                    title: 'jvm工具',
+                    collapsable: true,
+                    children: [
+                        '',
+                        '常用命令/'
+                    ]
+                }
+            ],
+            '/store/redis/':[
+                {
+                    title: 'redis',
+                    collapsable: true,
+                    children: [
+                        '',
+                        'cache缓存一致性'
+                    ]
+                }
+            ],
+            '/net/base/': [
+                {
+                    title: '网络与协议',
+                    collapsable: true,
+                    children: [
+                        '',
+                        'http/'
+                    ]
+                }
+            ],
+
             '/tools/': [
                 {
                     title: '常用命令',
@@ -50,7 +133,41 @@ module.exports = {
                         'markdown/'
                     ]
                 }
+            ],
+            '/date/': [
+                {
+                    title: '日常积累',
+                    collapsable: true,
+                    children: [
+                        '',
+                        'unSolve/',
+                        '20181023/'
+                    ]
+                }
+            ],
+
+            // 读书笔记
+            '/log/': [
+                {
+                    title: '读书笔记',
+                    collapsable: true,
+                    children: [
+                        '',
+                        'secKill/'
+                    ]
+                }
+            ],
+
+            '/interview/wife/': [
+                {
+                    title: '面试准备-wife',
+                    collapsable: true,
+                    children: [
+                        ''
+                    ]
+                }
             ]
+
         }
     }
 }
