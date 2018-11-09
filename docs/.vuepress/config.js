@@ -19,8 +19,7 @@ module.exports = {
             { text: '虚拟机',
                 items: [
                     { text: '常用工具', link: '/jvm/tools/' },
-                    { text: 'use', link: '/jvm/use/' },
-                    { text: 'api', link: '/jvm/api/' }
+                    { text: '原理', link: '/jvm/theory/' }
                 ]
             },
             { text: '网络',
@@ -33,6 +32,11 @@ module.exports = {
                 items: [
                     { text: 'redis', link: '/store/redis/' },
                     { text: 'mysql', link: '/store/mysql/' }
+                ]
+            },
+            { text: '人工智能',
+                items: [
+                    { text: '集体智慧编程', link: '/ai/集体智慧编程/' }
                 ]
             },
             { text: '常用命令&日常',
@@ -95,8 +99,21 @@ module.exports = {
                     title: 'jvm工具',
                     collapsable: true,
                     children: [
+                        '目录',
+                        'jvm常用命令'
+                    ]
+                }
+            ],
+
+            '/jvm/theory/': [
+                {
+                    title: 'jvm运行原理',
+                    collapsable: true,
+                    children: [
                         '',
-                        '常用命令/'
+                        'java运行原理',
+                        'java基本类型',
+                        'jvm加载原理'
                     ]
                 }
             ],
@@ -120,7 +137,16 @@ module.exports = {
                     ]
                 }
             ],
-
+            '/ai/集体智慧编程/': [
+                {
+                    title: '集体智慧编程读书笔记',
+                    collapsable: true,
+                    children: [
+                        '',
+                        '提供推荐'
+                    ]
+                }
+            ],
             '/tools/': [
                 {
                     title: '常用命令',
@@ -130,6 +156,7 @@ module.exports = {
                         'hadoop/',
                         'hive/',
                         'linux/',
+                        'ant/',
                         'markdown/'
                     ]
                 }
