@@ -16,8 +16,9 @@ sidebarDepth: 0
 
 - [java 运行原理](./java运行原理.html)
 - [java 基本类型](./java基本类型.html)
-- jvm 加载原理
-- jvm 异常处理
+- [jvm 加载原理](./jvm加载原理.html)
+- [jvm 方法调用](./jvm方法调用原理.html)
+- [jvm 异常处理](./jvm异常处理.html)
 - jvm 反射实现原理
 - java8 lambada运行原理
 - jvm 构造对象

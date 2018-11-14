@@ -113,7 +113,9 @@ module.exports = {
                         '',
                         'java运行原理',
                         'java基本类型',
-                        'jvm加载原理'
+                        'jvm加载原理',
+                        'jvm方法调用原理',
+                        'jvm异常处理'
                     ]
                 }
             ],
