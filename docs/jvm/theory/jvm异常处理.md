@@ -240,7 +240,7 @@ Exception in thread "main" java.lang.RuntimeException: Initial
 try {
     ...
 } catch (SomeException | OtherException e) {
-    ...
+    ...cle
 }
 ```
 
