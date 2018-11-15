@@ -19,7 +19,7 @@ sidebarDepth: 0
 - [jvm 加载原理](./jvm加载原理.html)
 - [jvm 方法调用](./jvm方法调用原理.html)
 - [jvm 异常处理](./jvm异常处理.html)
-- jvm 反射实现原理
+- [jvm 反射实现原理](./jvm反射原理.html)
 - java8 lambada运行原理
 - jvm 构造对象
 - 垃圾回收算法
