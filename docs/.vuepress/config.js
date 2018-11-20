@@ -117,7 +117,8 @@ module.exports = {
                         'jvm方法调用原理',
                         'jvm异常处理',
                         'jvm反射原理',
-                        'jvm方法句柄'
+                        'jvm方法句柄',
+                        'java内存模型'
 
                     ]
                 }
