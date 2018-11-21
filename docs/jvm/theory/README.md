@@ -22,9 +22,9 @@ sidebarDepth: 0
 - [jvm 反射实现原理](./jvm反射原理.html)
 - [jvm 方法句柄](./jvm方法句柄.html)
 - [java内存模型](./java内存模型.html)
+- [java垃圾回收](./java垃圾回收.html)
 - java8 lambada运行原理
 - jvm 构造对象
-- 垃圾回收算法
 - java 同步实现
 - java 内存模型
 - java 安全模型实现原理

@@ -118,8 +118,8 @@ module.exports = {
                         'jvm异常处理',
                         'jvm反射原理',
                         'jvm方法句柄',
-                        'java内存模型'
-
+                        'java内存模型',
+                        'java垃圾回收'
                     ]
                 }
             ],
