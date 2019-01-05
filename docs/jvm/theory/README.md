@@ -23,7 +23,7 @@ sidebarDepth: 0
 - [jvm 方法句柄](./jvm方法句柄.html)
 - [java内存模型](./java内存模型.html)
 - [java垃圾回收](./java垃圾回收.html)
-- java8 lambada运行原理
+- [jvm 锁机制](./jvm锁机制.html)
 - jvm 构造对象
 - java 同步实现
 - java 内存模型

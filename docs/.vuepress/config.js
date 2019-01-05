@@ -119,7 +119,8 @@ module.exports = {
                         'jvm反射原理',
                         'jvm方法句柄',
                         'java内存模型',
-                        'java垃圾回收'
+                        'java垃圾回收',
+                        'jvm锁机制'
                     ]
                 }
             ],
