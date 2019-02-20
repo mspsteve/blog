@@ -13,11 +13,7 @@ module.exports = {
               items: [
                     { text: '基础', link: '/java/base/' },
                     { text: '进阶', link: '/java/api/' },
-                    { text: 'java8', link: '/java/java8/' }
-                ]
-            },
-            { text: '虚拟机',
-                items: [
+                    { text: 'java8', link: '/java/java8/' },
                     { text: '常用工具', link: '/jvm/tools/' },
                     { text: '原理', link: '/jvm/theory/' }
                 ]
@@ -59,7 +55,7 @@ module.exports = {
 
             '/java/api/': [
                 {
-                    title: 'java进阶',
+                    title: '源码解析',
                     collapsable: true,
                     children: [
                         'Unsafe/',
@@ -71,7 +67,7 @@ module.exports = {
             ],
             '/java/base/': [
                 {
-                  title: 'java基础',
+                  title: '基础',
                   collapsable: true,
                   children: [
                       'IO/',
