@@ -10,7 +10,7 @@ sidebarDepth: 0
 
 ### 日志打印
 :::tip
-- perf log 日志打印过程中，PerfUtils.perf 在使用的过程中，不要使用变量(测试环境 遇到bug,导致`OOM`)
+- perf log 日志打印过程中，PerfUtils.perf 在使用的过程中，不要使用变量(测试环境遇到bug,导致`OOM`)
 - 如果非要传变量统计，请使用:
      `PerfUtils.perf(TAG, SUB_TAG_RED_PACKET_INSERT_PAY).millis(payRecord.getCreateTime())`在mills中传参，根据具体情况统计；
 :::

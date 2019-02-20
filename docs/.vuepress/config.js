@@ -11,96 +11,62 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'java',
               items: [
-                    { text: '基础', link: '/java/base/' },
-                    { text: '进阶', link: '/java/api/' },
-                    { text: 'java8', link: '/java/java8/' },
-                    { text: '常用工具', link: '/jvm/tools/' },
+                    { text: 'java', link: '/java/' },
                     { text: '原理', link: '/jvm/theory/' }
                 ]
             },
-            { text: '网络',
+            { text: '中间件',
                 items: [
-                    { text: '概念', link: '/net/base/' },
-                    { text: 'RPC框架', link: '/net/rpc/' }
+                    { text: 'rpc', link: '/rpc/' },
+                    { text: 'mysql', link: '/mysql/' },
+                    { text: 'redis', link: '/redis/' },
+                    { text: 'message', link: '/message/' },
+                    { text: 'nginx', link: '/nginx/' }
                 ]
             },
-            { text: '存储',
+            { text: 'AI',
                 items: [
-                    { text: 'redis', link: '/store/redis/' },
-                    { text: 'mysql', link: '/store/mysql/' }
+                    { text: '集体智慧编程', link: '/ai/reco/' }
                 ]
             },
-            { text: '人工智能',
+            { text: '日常积累',
                 items: [
-                    { text: '集体智慧编程', link: '/ai/集体智慧编程/' }
-                ]
-            },
-            { text: '常用命令&日常',
-                items: [
-                    { text: '常用命令', link: '/tools/' },
+                    { text: '命令', link: '/tools/' },
                     { text: '日常', link: '/date/' },
-                    { text: '读书笔记', link: '/log/' },
                 ]
             },
-            { text: '面试准备',
+            { text: 'other',
                 items: [
-                    { text: '老婆专用', link: '/interview/wife/' },
-                    { text: '其他', link: '/interview/' }
+                    { text: '其他', link: '/other/' }
+                ]
+            },
+            { text: '面试',
+                items: [
+                    { text: '面试', link: '/interview/' }
                 ]
             },
             { text: 'github', link: 'https://github.com/mspsteve/' }
 
         ],
         sidebar: {
-
-            '/java/api/': [
+            '/java/': [
                 {
                     title: '源码解析',
                     collapsable: true,
                     children: [
-                        'Unsafe/',
-                        'Thread/',
-                        'Executor/',
-                        'Lock/'
-                    ]
-                }
-            ],
-            '/java/base/': [
-                {
-                  title: '基础',
-                  collapsable: true,
-                  children: [
-                      'IO/',
-                      'Reference/',
-                      'Exception/',
-                      '多态/',
-                      '泛型/'
-                  ]
-                }
-            ],
-            //java 8相关新功能
-            '/java/java8/': [
-                {
-                    title: 'java8新特性',
-                    collapsable: true,
-                    children: [
                         '',
-                        'function/',
-                        'guava/'
+                        '1.1-Exception/',
+                        '1.2-IO/',
+                        '1.3-Reference/',
+                        '1.4-Thread/',
+                        '1.5-Executor/',
+                        '1.6-Lock/',
+                        '1.7-Unsafe/',
+                        '2.1-function/',
+                        '2.2-guava/'
                     ]
                 }
             ],
-            '/jvm/tools/': [
-                {
-                    title: 'jvm工具',
-                    collapsable: true,
-                    children: [
-                        '目录',
-                        'jvm常用命令'
-                    ]
-                }
-            ],
-
             '/jvm/theory/': [
                 {
                     title: 'jvm运行原理',
@@ -120,7 +86,25 @@ module.exports = {
                     ]
                 }
             ],
-            '/store/redis/':[
+            '/rpc/':[
+                {
+                    title: 'rpc',
+                    collapsable: true,
+                    children: [
+                        ''
+                    ]
+                }
+            ],
+            '/mysql/':[
+                {
+                    title: 'mysql',
+                    collapsable: true,
+                    children: [
+                        ''
+                    ]
+                }
+            ],
+            '/redis/':[
                 {
                     title: 'redis',
                     collapsable: true,
@@ -130,19 +114,28 @@ module.exports = {
                     ]
                 }
             ],
-            '/net/base/': [
+            '/message/':[
                 {
-                    title: '网络与协议',
+                    title: 'message',
                     collapsable: true,
                     children: [
-                        '',
-                        'http/'
+                        ''
                     ]
                 }
             ],
-            '/ai/集体智慧编程/': [
+            '/nginx/':[
                 {
-                    title: '集体智慧编程读书笔记',
+                    title: 'redis',
+                    collapsable: true,
+                    children: [
+                        ''
+                    ]
+                }
+            ],
+
+            '/ai/reco/': [
+                {
+                    title: '集体智慧编程',
                     collapsable: true,
                     children: [
                         '',
@@ -160,7 +153,8 @@ module.exports = {
                         'hive/',
                         'linux/',
                         'ant/',
-                        'markdown/'
+                        'markdown/',
+                        'java/'
                     ]
                 }
             ],
@@ -170,28 +164,24 @@ module.exports = {
                     collapsable: true,
                     children: [
                         '',
-                        'unSolve/',
                         '20181023/',
-                        '20190220/'
+                        '20190220/',
+                        'seckill/'
                     ]
                 }
             ],
-
-            // 读书笔记
-            '/log/': [
+        '/other/': [
+            {
+                title: '杂记',
+                collapsable: true,
+                children: [
+                    ''
+                ]
+            }
+        ],
+        '/interview/': [
                 {
-                    title: '读书笔记',
-                    collapsable: true,
-                    children: [
-                        '',
-                        'secKill/'
-                    ]
-                }
-            ],
-
-            '/interview/wife/': [
-                {
-                    title: '面试准备-wife',
+                    title: '面试',
                     collapsable: true,
                     children: [
                         ''
