@@ -166,7 +166,8 @@ module.exports = {
                         '',
                         '20181023/',
                         '20190220/',
-                        'seckill/'
+                        'seckill/',
+                        'rateLimit/'
                     ]
                 }
             ],
