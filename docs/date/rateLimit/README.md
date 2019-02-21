@@ -213,7 +213,7 @@ public class DynamicSuppliers {
 
 ## 应用级别限流
 
-&emsp;&emsp;基于Tomcat的Connector的相关配置来实现限流,参考博客[限流](https://www.jianshu.com/p/2596e559db5c)：
+&emsp;&emsp;基于Tomcat的Connector的相关配置来实现限流：
 
 - acceptCount：如果Tomcat的线程都忙于响应，新来的连接会进入队列排队，如果超出排队大小，则拒绝连接；
 - maxConnections： 瞬时最大连接数，超出的会排队等待；
