@@ -221,7 +221,8 @@ public class DynamicSuppliers {
 
 ## 参考文档
 
-- [限流](https://jinnianshilongnian.iteye.com/blog/2305117)
+- [限流-开涛](https://jinnianshilongnian.iteye.com/blog/2305117)
+- [限流-简书](https://www.jianshu.com/p/2596e559db5c)
 
 
 

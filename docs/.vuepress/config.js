@@ -154,7 +154,8 @@ module.exports = {
                         'linux/',
                         'ant/',
                         'markdown/',
-                        'java/'
+                        'java/',
+                        'charles/'
                     ]
                 }
             ],
