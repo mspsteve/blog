@@ -91,7 +91,8 @@ module.exports = {
                     title: 'rpc',
                     collapsable: true,
                     children: [
-                        ''
+                        '',
+                        'grpc/'
                     ]
                 }
             ],
